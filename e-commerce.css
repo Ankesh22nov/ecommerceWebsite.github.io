@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Serif', serif;
+
+}
+
+.container {
+    /* background: linear-gradient(45deg, rgb(48, 7, 7), rgb(76, 76, 167), rgb(39, 15, 15)); */
+    background-color: rgb(233, 226, 213);
+    color: white;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.left {
+    width: 50%;
+}
+
+.navigation_bar {
+    display: flex;
+    height: 7em;
+    width: 100%;
+    /* background: linear-gradient(45deg, rgb(48, 7, 7), rgb(76, 76, 167), rgb(39, 15, 15)); */
+    box-shadow: 1px 0.3px 10px 2px rgb(73, 75, 78);
+    position: fixed;
+    background-color: white;
+    color: black
+}
+
+.navigation_bar button:hover {
+    border-bottom: 2px solid black;
+    color: rgb(18, 47, 70);
+}
+
+.logo_h2 span {
+    font-size: 3em;
+    background: linear-gradient(45deg, rgb(233, 225, 225), rgb(64, 64, 167), white);
+    border-radius: 0px 20px 0px 20px;
+    margin: 5px;
+}
+
+.nav_list {
+    display: flex;
+    position: relative;
+    left: 6rem;
+    top: -4rem;
+
+}
+
+/* .nav_list li {
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 5px;
+    cursor: pointer;
+    border: none
+} */
+.nav_list button{
+    border: none;
+    background: transparent;
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 5px;
+    cursor: pointer;
+    border: none
+}
+.menubar {
+    position: absolute;
+    left: 0%;
+    top: 7em;
+    z-index: 1;
+    height: 5%;
+    width: 5%;
+    cursor: pointer;
+    display: none;
+    color: black;
+    background-color: white;
+    text-align: center
+}
+
+#menu .material-symbols-outlined {
+    border: 1px solid black;
+    border-radius: 20%;
+    margin-left: 2px;
+    height: 1em;
+    width: 1.2em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.menubar li {
+    display: none;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+    margin: 2em 0%;
+}
+
+#list {
+    color: black;
+    background-color: white;
+    display: none;
+    width: 10em
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+
+}
+
+.right input {
+    position: relative;
+    height: 3em;
+    width: 20rem;
+    margin-top: 1em;
+    text-align: center;
+
+}
+
+.right span {
+    position: relative;
+    font-weight: lighter;
+    color: black
+}
+#search{
+    right: 13em;
+    top: 1em;
+}
+.icons {
+    position: relative;
+    display: flex;
+    top: 1rem;
+    margin-right: 3em;
+}
+
+.icons span {
+    cursor: pointer;
+    font-size: 1.8em;
+    font-weight: lighter;
+    margin-right: 1em;
+}
+
+.icons p {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.item_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 82vh;
+    justify-content: left;
+    border: 1px solid white;
+    margin-left: 7em;
+    overflow-y: scroll;
+    background-color: rgb(233, 226, 213);
+    color: black;
+    position: fixed;
+    left: -3%;
+    top: 15%;
+    cursor: pointer;
+}
+#men_list{
+    display: flex
+}
+#women_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+#kids_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+#home_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+#beauty_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+    width: 0%;
+}
+
+.item_list li {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0.5em 2em;
+}
+
+.item_list li:hover {
+    text-decoration: underline
+}
+
+.item_list div {
+    padding-right: 2em
+}
+
+.list_head {
+    color: rgb(53, 41, 44);
+    font-weight: bold;
+}
+
+.line_break {
+    border-bottom: 1px solid rgb(24, 23, 23);
+    margin: 20px 0px;
+}
+
+.content {
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 10em;
+    width: 95%;
+    /* margin: 2% 0%; */
+    position: relative;
+    top: 0%;
+    overflow: auto;
+    margin-top: 9px;
+}
+
+.content div img {
+    cursor: pointer;
+    height: 4em;
+    width: 6em;
+    margin-right: 5%;
+    margin: 15px;
+}
+
+.content div p {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content_img {
+    margin: 2px 3px;
+}
+
+.content_img:hover {
+    border: 1px solid black;
+    border-radius: 10%;
+    background: linear-gradient(45deg, rgb(74, 80, 82), rgb(228, 232, 236), rgb(98, 111, 116));
+    cursor: pointer;
+    box-shadow: 2px 5px 20px rgb(116, 97, 97)
+}
+
+.main_div {
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    /* margin: 0 5%; */
+
+}
+
+
+.sale_img {
+    /* background-color: white; */
+    position: relative;
+    top: 0.5em;
+    height: 15em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0%;
+
+}
+
+.sale_img img {
+    position: relative;
+    height: 15rem;
+    width: 80rem;
+    object-fit: cover;
+}
+
+.top_offers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 42%;
+    width: 95%;
+    /* margin: 0% 10%; */
+    position: relative;
+    top: 1%;
+    background-color: white;
+    color: black;
+    overflow: auto
+}
+
+/* .top_offers img {
+    height: 3em;
+    width: 3em;
+    position: relative;
+    cursor: pointer;
+
+} */
+
+.offers {
+    margin: 2%;
+    height: 12em;
+    width: 15em;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 8);
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.offers:hover {
+    background: linear-gradient(45deg, rgb(74, 80, 82), rgb(228, 232, 236), rgb(98, 111, 116));
+    box-shadow: 2px 5px 10px rgb(116, 97, 97)
+}
+
+.offers img {
+    height: 70%;
+    width: 75%;
+    position: relative;
+    margin-top: 2%;
+    border-radius: 5%
+}
+
+.offers img:hover {
+    height: 72%;
+    width: 82%;
+    position: relative;
+    margin-top: 2%;
+    border-radius: 5%
+}
+
+.offer_item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: 1%; */
+}
+
+.top_offers h3 {
+    position: relative;
+    top: 3%;
+    left: 10%;
+    font-size: 1.5em;
+    height: 10%;
+}
+
+.top_deal_offer {
+    margin: 3% 0%;
+    width: 95%;
+    height: 50%;
+    color: black;
+    background-color: white;
+    overflow: auto
+}
+
+.top_deal_offer h3 {
+    position: relative;
+    top: 5%;
+    left: 10%;
+    font-size: 1.5em;
+    height: 10%;
+}
+
+.footer {
+    width: 100%;
+    height: 25em;
+    display: flex;
+    justify-content: inherit;
+    background-color: rgb(233, 226, 213);
+    color: black;
+}
+
+.inner_footer {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner_footer .div {
+    height: 100%;
+    width: 33%;
+}
+
+.F_icons {
+    display: flex;
+    justify-content: end;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(119, 111, 111);
+    border-radius: 50%;
+    margin: 1% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    cursor: pointer;
+
+}
+
+.F_icons img {
+    height: 18px;
+    width: 18px;
+    margin: 20%;
+    font-weight: lighter;
+    color: rgb(119, 111, 111);
+    cursor: pointer;
+
+}
+
+.F_icons :hover {
+    background-color: rgb(103, 110, 110)
+}
+
+.div {
+    margin: 2%;
+    font-family: serif;
+}
+
+.div input {
+    text-decoration: none;
+    background: none;
+    padding-bottom: 5%;
+    border-style: none;
+    border-bottom: 1px solid black;
+    color: #000;
+    cursor: pointer;
+    text-align: center
+
+}
+
+.div button {
+    height: 20%;
+    width: 20%;
+    background: transparent;
+    padding: 2%;
+    margin: 3% 1%;
+    border-radius: 30px;
+    transition: all .5s;
+    cursor: pointer;
+
+}
+
+.div button:hover {
+    color: rgb(29, 28, 26);
+    background-color: rgb(146, 136, 136);
+    box-shadow: 5px 5px 5px rgb(138, 122, 122)
+}
+
+.div p {
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.div p:hover {
+    color:rgb(83, 78, 78)
+}
+
+.div h2 {
+    margin-bottom: 7%;
+    cursor: pointer;
+}
+
+.div h2:hover {
+    color: rgb(88, 84, 84)
+}
+
+.div h1 {
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+
+.div h1:hover {
+    color: rgb(71, 66, 66);
+    text-decoration: underline
+}
+
+#second_div {
+    text-align: right
+}
+
+#third_div {
+    text-align: right
+}
+
+@media only screen and (max-width: 1156px) {
+    .offers{
+        height: 10em;
+        width: 10em;
+    }
+    .content{
+        height: 20em;
+    }
+    .menubar {
+        display: block;
+    }
+
+    .menubar li {
+        display: block;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .right span {
+        position: relative;
+        font-weight: bold;
+    }
+
+    .icons span {
+        cursor: pointer;
+        font-size: 1.3em;
+        font-weight: lighter;
+        margin-right: 10%;
+
+    }
+
+    .icons p {
+        font-size: 8%;
+        cursor: pointer;
+
+    }
+
+    .men_item_list {
+        width: 50vw;
+        height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid white;
+        margin-left: 7em;
+        overflow-y: scroll;
+        background-color: rgb(233, 226, 213);
+        color: white;
+        /* background: linear-gradient(45deg, rgb(88, 82, 82), rgb(4, 4, 68), rgb(112, 103, 103)); */
+    }
+    .inner_footer{
+        font-size: 1em
+    }
+    
+}
+
+@media only screen and (max-width: 1259px) {
+    .content {
+        background: white;
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 20em;
+        width: 95%;
+        position: relative;
+        top: 0%;
+        overflow: auto;
+        margin-top: 9px
+    }
+    .right span {
+        display: none
+    }
+    .icons span{
+        display: flex;
+        margin-right : 0%;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .icons span{
+        display: flex;
+        margin : 0%;
+    }
+    .offers{
+        height: 10em;
+        width: 10em;
+    }
+    .offers p{
+        font-size: 15px
+    }
+    .offers h5{
+        font-size: 15px
+    }
+}
